@@ -1,4 +1,9 @@
 # Spotify Ad Skipper
+<p align="center">
+  <img width="605" height="249" src="https://i.imgur.com/N4zKWXL.jpg">
+</p>
+
+
 
 ## Program Description
 
