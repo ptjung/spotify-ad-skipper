@@ -182,6 +182,7 @@ def play_next_song(spfy_open, window_names = ('Spotify Free', 'Spotify')):
 
 def main():
     """This is the main-line logic of the program."""
+    os.system("title Spotify Ad Skipper")
     
     # This list of advertisement titles may change in the future
     ADVERT_TITLES = ['Spotify', 'Advertisement']
