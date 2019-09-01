@@ -185,14 +185,17 @@ def main():
     
     # This list of advertisement titles may change in the future
     ADVERT_TITLES = ['Spotify', 'Advertisement']
-    
     # These constants may vary, especially for slower computers (yet to be tested)
-    TEST_INTERVAL, SPOTIFY_LOAD_TIME, SONG_SAVE_TIME, REFSH_COOLDOWN = 0.5, 1.25, 2.25, 10.0
+    TEST_INTERVAL, SPOTIFY_LOAD_TIME, SONG_SAVE_TIME, REFSH_COOLDOWN = 1.0, 1.25, 2.25, 10.0
     
+    played_song = ''
     while True:
         # Check for Spotify ads on an infinite time loop
         curr_song = get_curr_song()
-        print('Log (Notif.): Now playing "%s"' % (curr_song))
+        if (curr_song != played_song):
+            # For log purposes, new or changed songs will be outputted to the screen
+            played_song = curr_song
+            print('Log (Notif.): Now playing "%s"' % (curr_song))
         
         if proc_exists('Spotify.exe') and (curr_song in ADVERT_TITLES):
             # Upon ad detection, reload Spotify and play the next song in queue
