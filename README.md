@@ -9,6 +9,12 @@
 
 This script runs in the background to automatically skip Spotify ads.
 
+## Dependencies
+
+- keyboard
+- pywinauto
+- win32gui
+
 ## Features
 
 - Spotify is checked in frequent time intervals.
@@ -21,7 +27,7 @@ This script runs in the background to automatically skip Spotify ads.
 
 - The mouse cursor is usually displaced after rebooting Spotify.
 - Greatly tampers with user work done in the moment of rebooting.
-- The rebooted Spotify window uncommonly opens up a drop-down window instead of automatically playing the next song.
+- The rebooted Spotify window uncommonly opens up a drop-down window instead of playing the next song.
 - Songs without an author _(usually local files)_ that are named "Spotify" or "Advertisement" are deemed ads.
 
 ## Changelog
